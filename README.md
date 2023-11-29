@@ -116,3 +116,22 @@ To launch the OMNeT++ IDE, launch Applications > Development > OMNeT++.
 
 The external adaptation manager is included in the project `simple_am` in the work space.
 The adaptation manager that works as a simulation module, which is called `ReactiveAdaptationManager`, is located in `swim/src/managers/adaptation/`.
+
+# How to run simulation with actor crtic manager:
+1. Start SWIM using external adapation manager:
+```
+   > cd ./simulations/swim/
+   > ./run.sh sim 0
+```
+2. Start actor crtic manager:
+```
+   > cd ./actor_critic
+   > python3 ./main.py your_epsilon(default is 1)
+```
+3. To display SWIM result: same as above
+4. To display actor critic training loss:
+```
+   > cd ./actor_critic/result
+   > python3 ./../plot.py
+```
+
